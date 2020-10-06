@@ -1,0 +1,16 @@
+{
+    "name": "defontify",
+    "version": "0.1",
+    "description": "Converts mathematical symbol 'fonts' to plain text for screen readers.",
+    "icons": {
+        "128": "128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["defontify.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version": 2
+}
